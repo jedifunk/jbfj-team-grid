@@ -1,2 +1,4 @@
-# jbfj-team-grid
-Custom Wordpress Team Grid
+jbfj-team-grid
+==============
+
+JBFJ Team Grid

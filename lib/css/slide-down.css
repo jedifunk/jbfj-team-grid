@@ -1,0 +1,146 @@
+/***** SLIDE DOWN *****/
+
+/* Extra div to handle some IE scenarios with absolute positioning. */
+#sliding-panel-container {
+	position: relative;
+	display: block;
+	z-index: 999;
+	width: 100%;
+	}
+
+/* Sliding panel. */
+#sliding-panel {
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	width: 260px;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+/* The part of the panel that actually slides. */
+#sliding-panel .panel {
+	overflow: hidden;
+	display: none;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	background: #014e27;
+	}
+
+/* Widget container. */
+#sliding-panel .panel-content {
+	width: 230px;
+	margin: 15px auto;
+	padding: 0;
+	text-align: left;
+	}
+
+/* Sliding panel widgets. */
+#sliding-panel .widget {
+	margin: 0;
+	color: #888;
+	background: transparent;
+	font-size: .75em;
+	}
+#sliding-panel .widget-inside {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget titles. */
+#sliding-panel .widget-title {
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #999;
+	text-transform: none;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget lists. */
+#sliding-panel .widget ul {
+	margin: 0;
+	list-style: none;
+	}
+#sliding-panel .widget ul li {
+	margin-bottom: 10px;
+	padding: 0;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget links. */
+#sliding-panel .widget a {
+	font-style: italic;
+	color: #eee;
+	text-decoration: none;
+	}
+#sliding-panel .widget a:hover {
+	text-decoration: underline;
+	}
+
+/* Toggle div wrapper. */
+#sliding-panel .tab {
+	position: relative;
+	top: 0;
+	z-index: 9999;
+}
+
+/* Wrapper for the open/close button. */
+#sliding-panel .tab .toggle {
+  	clear: both;
+	display: block;
+	position: relative;
+	height: 25px;
+	margin: 0 auto;
+	}
+
+/* Open/close link. */
+#sliding-panel .tab a {
+	display: block;
+	position: relative;
+	width: 260px;
+	height: 20px;
+	margin: 0 auto;
+	padding: 5px 0 0;
+	color: #fff;
+  	background: #014e27;
+ 	text-align: center;
+ 	font-size: .75em;
+ 	text-transform: uppercase;
+}
+
+/* Open link. */
+#sliding-panel .tab a.open {
+	}
+
+/* Close link. */
+#sliding-panel .tab a.close {
+	}
+
+/* Open/close link hover. */
+#sliding-panel .tab a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	}
+
+/* Open/close link array (&urarr;). */
+#sliding-panel .tab a .arrow {
+	font-style: normal;
+	padding: 3px 15px;
+	background: #014e27;
+	border-radius: 0 0 50% 50%;
+	}
+
+/* Form inside Slide Down */
+#sliding-panel .wpcf7-submit {
+	padding: 10px 0;
+	text-transform: uppercase;
+	width: 230px;
+}
+#sliding-panel input[type=text] {
+	width: 222px;
+}
